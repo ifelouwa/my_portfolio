@@ -1,14 +1,14 @@
 function Contact() {
   return (
     <section className="shell section anchor-offset" id="contact">
-      <header className="section-header d-flex justify-content-between gap-3">
+      <header className="section-header d-flex justify-content-between gap-6">
         <div>
           <div className="section-kicker">Contact</div>
           <h2 className="section-title">Let&apos;s talk about your roadmap</h2>
         </div>
       </header>
 
-      <div className="contact-layout row g-1" aria-label="Contact methods">
+      <div className="contact-layout row g-9" aria-label="Contact methods">
         <div className="contact-body col-12 col-lg-12">
           <p>
             Whether you need a <span className="contact-highlight">new product shipped</span>, an{' '}
@@ -17,8 +17,8 @@ function Contact() {
             move from idea to reliable, maintainable software.
           </p>
           <p>
-            Share a short note about your team, the problem you are solving, and where you need help. I
-            usually respond within one business day.
+            Share a short note about your team, the problem you are solving, and where you need help.
+            I usually respond within one business day.
           </p>
         </div>
 

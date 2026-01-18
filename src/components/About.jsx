@@ -1,7 +1,7 @@
 function About() {
   return (
     <section className="shell section anchor-offset" id="about">
-      <header className="section-header d-flex justify-content-between gap-3">
+      <header className="section-header d-flex justify-content-between gap-6">
         <div>
           <div className="section-kicker">About</div>
           <h2 className="section-title">Building practical, scalable systems end to end</h2>
@@ -12,29 +12,25 @@ function About() {
         </p>
       </header>
 
-      <div className="about-layout row g-4">
+      <div className="about-layout row g-6">
         <div className="about-body col-12 col-lg-12">
           <p>
-            I am a remote <strong>Full-Stack Developer and AI Automation Engineer</strong> with a passion
-            for building practical, user-focused web applications and intelligent automation systems that
-            reduce manual work and drive real impact.
+            I'm a remote <strong>Full-Stack Developer and AI Automation Engineer</strong> focused on building user-friendly products with clean interfaces, solid backends, and reliable APIs.
           </p>
           <p>
-            I work across the entire stack, crafting clean, responsive frontends, solid backends, and
-            reliable APIs. I also integrate AI-powered workflows to streamline processes and add meaningful
-            automation where it helps teams the most.
+            I work across the entire stack, from frontend architecture to backend systems and integrate AI-powered workflows 
+            where automation meaningfully reduces manual work and improves efficiency.
           </p>
           <p>
-            Currently, I am building a logistics platform MVP while strengthening my skills in modern web
-            development and AI automation. I am open to remote roles, collaborations, and freelance work
-            where I can build and scale real solutions.
+            Currently, I'm building a logistics platform while deepening my expertise in modern web development and AI automation. 
+            I'm open to remote roles, collaborations, and focused freelance engagements.
           </p>
         </div>
         <dl className="about-meta col-12 col-lg-12">
           <div className="about-meta-item">
             <dt className="about-meta-label">What I do</dt>
             <dd className="about-meta-value">
-              End-to-end product engineering, AI workflows, internal tools
+              End-to-end web application development, internal tools, and AI-powered workflows
             </dd>
           </div>
           <div className="about-meta-item">
@@ -52,7 +48,7 @@ function About() {
           <div className="about-meta-item">
             <dt className="about-meta-label">Currently</dt>
             <dd className="about-meta-value">
-              Building a logistics platform MVP and sharpening modern web + AI automation skills.
+              Building a logistics platform and sharpening modern web + AI automation skills.
             </dd>
             <dd className="about-meta-pill-row">
               <span className="about-meta-pill">Remote-friendly</span>

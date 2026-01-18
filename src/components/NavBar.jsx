@@ -1,19 +1,19 @@
 function NavBar({ onNavClick, onContact }) {
   return (
     <header className="nav">
-      <div className="nav-inner d-flex align-items-center justify-content-between gap-3">
-        <div className="nav-brand d-flex align-items-center gap-2">
+      <div className="nav-inner d-flex align-items-center justify-content-between gap-6">
+        <div className="nav-brand d-flex align-items-center gap-6">
           <div className="nav-logo">
-            <div className="nav-logo-inner">
-              <img src="/images/CORE.jpg" alt="A picture of Ifeoluwa" />
+            <div className="nav-logo-inner" onClick={() => onNavClick('about')}>
+              <img style={{ width: '70px', height: '40px', borderRadius: '5px' }} src="src/images/me.jpg" alt="A picture of Ifeoluwa" />
             </div>
           </div>
-          <div className="nav-title d-flex flex-column gap-1">
+          <div className="nav-title d-flex flex-column gap-6">
             <div className="nav-name">PRIMORDIAL</div>
             <div className="nav-role">Remote Full-Stack & AI Automation</div>
           </div>
         </div>
-        <nav className="nav-links d-none d-md-flex align-items-center gap-3" aria-label="Primary">
+        <nav className="nav-links d-none d-md-flex align-items-center gap-6" aria-label="Primary">
           <button className="nav-link btn btn-link p-0" type="button" onClick={() => onNavClick('about')}>
             About
           </button>
@@ -33,7 +33,7 @@ function NavBar({ onNavClick, onContact }) {
           onClick={onContact}
         >
           <span className="nav-cta-dot" />
-          <span>Open to remote roles</span>
+          <span>Open</span>
         </button>
       </div>
     </header>

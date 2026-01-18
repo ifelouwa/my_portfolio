@@ -1,13 +1,12 @@
-function Hero({ onViewWork, onContact, onDownloadCv }) {
+function Hero({ onContact, onDownloadCv }) {
   return (
     <section className="shell hero anchor-offset" id="hero">
       <div>
-        <div className="hero-kicker d-inline-flex align-items-center gap-2">
+        <div className="hero-kicker d-inline-flex align-items-center gap-6">
           <span className="hero-kicker-pill d-inline-flex align-items-center gap-2">
             <span className="hero-kicker-pill-dot" />
-            <span className="hero-badge-text">Remote-first developer</span>
+            <span className="hero-badge-text">Building elegant, scalable web apps & AI-powered workflows</span>
           </span>
-          <span>Building elegant, scalable web apps & AI-powered workflows</span>
         </div>
 
         <h1 className="hero-heading">
@@ -18,17 +17,13 @@ function Hero({ onViewWork, onContact, onDownloadCv }) {
         </h1>
 
         <p className="hero-subheading">
-          I build practical, user-focused web applications and{' '}
-          <span className="hero-subheading-strong">AI-powered automation</span> that reduce manual work
-          and drive real impact for remote teams.
+          I build scalable web applications and{' '}
+          <span className="hero-subheading-strong">AI-powered workflows</span> that help remote teams move faster with less manual work.
         </p>
 
-        <div className="hero-cta-row d-flex flex-wrap align-items-center gap-2 mt-4">
-          <button type="button" className="btn btn-accent-primary" onClick={onViewWork}>
-            View My Work
-          </button>
-          <button type="button" className="btn btn-outline-light hero-secondary-btn" onClick={onContact}>
-            Contact Me
+        <div className="hero-cta-row d-flex flex-wrap align-items-center gap-6 mt-4">
+          <button type="button" className="btn btn-accent-primary" onClick={onContact}>
+            Let's work together
           </button>
           {onDownloadCv && (
             <button
@@ -45,15 +40,15 @@ function Hero({ onViewWork, onContact, onDownloadCv }) {
           <div className="hero-meta-item">
             <dt className="hero-meta-label">Focus</dt>
             <dd className="hero-meta-value">
-              Remote SaaS products, automation rails, internal tools
+              Building remote-first SaaS products and AI-powered automations that scale teams
             </dd>
           </div>
           <div className="hero-meta-item">
             <dt className="hero-meta-label">Strengths</dt>
             <dd className="hero-meta-pills">
               <span className="hero-meta-pill">End-to-end ownership</span>
-              <span className="hero-meta-pill">Calm shipping</span>
-              <span className="hero-meta-pill">AI that actually helps</span>
+              <span className="hero-meta-pill">Calm, reliable shipping</span>
+              <span className="hero-meta-pill">Practical AI systems</span>
             </dd>
           </div>
         </dl>

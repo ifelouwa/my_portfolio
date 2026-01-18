@@ -1,7 +1,7 @@
 function Projects({ projects }) {
   return (
     <section className="shell-wide section anchor-offset" id="projects">
-      <header className="section-header d-flex justify-content-between gap-3">
+      <header className="section-header d-flex justify-content-between gap-6">
         <div>
           <div className="section-kicker">Projects</div>
           <h2 className="section-title">Selected work</h2>
@@ -11,7 +11,7 @@ function Projects({ projects }) {
         </p>
       </header>
 
-      <div className="projects-grid row g-3">
+      <div className="projects-grid row g-6">
         {projects.map((project) => (
           <article key={project.name} className="project-card col-12 col-md-12 col-lg-12">
             <div className="project-tag-row">

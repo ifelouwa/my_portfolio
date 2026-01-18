@@ -12,7 +12,7 @@ const projects = [
     name: 'Quiz App',
     tagline: 'Interactive quiz application with multiple categories and difficulty levels.',
     stack: ['HTML', 'CSS', 'JavaScript'],
-    type: 'Frontend',
+    type: 'Web App',
     status: 'Live',
     github: 'https://github.com/ifelouwa/Quiz-App',
     demo: 'https://quiz-app-three-dusky.vercel.app/',
@@ -20,9 +20,9 @@ const projects = [
   {
     name: 'Golden Ball Auction',
     tagline:
-      'A full-stack auction platform where users can create items, upload images, place bids, and track live auctions.',
+      'A full-stack auction platform where users can create items, upload images, place bids, and track live auctions, supporting real-time bidding across multiple concurrent listings and active users.',
     stack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    type: 'Full-Stack',
+    type: 'Production System',
     status: 'Live',
     github: 'https://github.com/ifelouwa/golden_ball',
     demo: 'https://golden-ball.vercel.app/',
@@ -30,17 +30,17 @@ const projects = [
   {
     name: 'Logistics Platform',
     tagline:
-      'An in-progress logistics platform focused on streamlining deliveries and tracking for growing teams.',
+      'An in-progress logistics platform focused on streamlining deliveries and tracking for growing teams, designed as a scalable MVP with modular services.',
     stack: ['React', 'Node.js', 'PostgreSQL'],
     type: 'Product',
     status: 'In Progress',
-    github: 'https://github.com/ifelouwa/logistics_platform',
+    github: 'https://github.com/ifelouwa/EPELOG',
     demo: '',
   },
 ]
 
 const skills = {
-  frontend: ['React', 'Vue', 'Vite', 'Bootstrap', 'Tailwind CSS'],
+  frontend: ['React', 'Vue', 'Vite', 'Bootstrap'],
   backend: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL'],
   ai: ['AI Agents', 'Workflow Automation', 'Prompt Engineering', 'OpenAI', 'LLM Integrations'],
   tools: ['Git', 'Vercel', 'Postman'],
@@ -54,7 +54,7 @@ function App() {
   }
 
   const handleDownloadCv = () => {
-    scrollToSection('contact')
+  window.open('src/public/IFEOLUWA_CV.pdf', '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -68,12 +68,40 @@ function App() {
 
       <main className="content">
         <Hero
-          onViewWork={() => scrollToSection('projects')}
           onContact={() => scrollToSection('contact')}
           onDownloadCv={handleDownloadCv}
         />
         <About />
         <Skills skills={skills} />
+        <section className="shell section anchor-offset" id="ai">
+          <header className="section-header d-flex justify-content-between gap-6">
+            <div>
+              <div className="section-kicker">How I add AI</div>
+              <h2 className="section-title">How I add AI to products</h2>
+            </div>
+            <p className="section-subtitle">
+              Calm, practical AI applied only where it meaningfully improves the work.
+            </p>
+          </header>
+          <div className="row g-6">
+            <div className="col-12 col-lg-12">
+              <ul>
+                <li>
+                  Identify repetitive, manual workflows and introduce AI only where it meaningfully
+                  saves time or reduces errors.
+                </li>
+                <li>
+                  Design AI-powered features as assistive tools, not black boxes, with clear inputs,
+                  outputs, and fallbacks.
+                </li>
+                <li>
+                  Integrate LLMs into existing systems using APIs, automation rails, and prompt
+                  engineering focused on reliability.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <Projects projects={projects} />
         <Contact />
         <Footer />
