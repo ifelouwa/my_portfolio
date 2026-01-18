@@ -13,7 +13,7 @@ function Projects({ projects }) {
 
       <div className="projects-grid row g-3">
         {projects.map((project) => (
-          <article key={project.name} className="project-card col-12 col-md-6 col-lg-4">
+          <article key={project.name} className="project-card col-12 col-md-12 col-lg-12">
             <div className="project-tag-row">
               <span className="project-tag">{project.type}</span>
               <span className="project-status">{project.status}</span>

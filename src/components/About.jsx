@@ -13,7 +13,7 @@ function About() {
       </header>
 
       <div className="about-layout row g-4">
-        <div className="about-body col-12 col-lg-7">
+        <div className="about-body col-12 col-lg-12">
           <p>
             I am a remote <strong>Full-Stack Developer and AI Automation Engineer</strong> with a passion
             for building practical, user-focused web applications and intelligent automation systems that
@@ -30,7 +30,7 @@ function About() {
             where I can build and scale real solutions.
           </p>
         </div>
-        <dl className="about-meta col-12 col-lg-5">
+        <dl className="about-meta col-12 col-lg-12">
           <div className="about-meta-item">
             <dt className="about-meta-label">What I do</dt>
             <dd className="about-meta-value">

@@ -4,10 +4,12 @@ function NavBar({ onNavClick, onContact }) {
       <div className="nav-inner d-flex align-items-center justify-content-between gap-3">
         <div className="nav-brand d-flex align-items-center gap-2">
           <div className="nav-logo">
-            <div className="nav-logo-inner">YD</div>
+            <div className="nav-logo-inner">
+              <img src="/images/CORE.jpg" alt="A picture of Ifeoluwa" />
+            </div>
           </div>
           <div className="nav-title d-flex flex-column gap-1">
-            <div className="nav-name">Your Name</div>
+            <div className="nav-name">PRIMORDIAL</div>
             <div className="nav-role">Remote Full-Stack & AI Automation</div>
           </div>
         </div>

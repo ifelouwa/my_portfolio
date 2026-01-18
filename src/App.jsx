@@ -34,7 +34,7 @@ const projects = [
     stack: ['React', 'Node.js', 'PostgreSQL'],
     type: 'Product',
     status: 'In Progress',
-    github: '',
+    github: 'https://github.com/ifelouwa/logistics_platform',
     demo: '',
   },
 ]

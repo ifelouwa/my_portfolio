@@ -12,8 +12,8 @@ function Skills({ skills }) {
         </p>
       </header>
 
-      <div className="skills-grid row g-3">
-        <article className="skills-card col-12 col-md-6 col-lg-3">
+      <div className="skills-grid row g-1">
+        <article className="skills-card col-12 col-md-12 col-lg-12">
           <div className="skills-card-header">
             <h3 className="skills-title">
               <span className="stack-icon stack-icon-frontend" />
@@ -33,7 +33,7 @@ function Skills({ skills }) {
           </div>
         </article>
 
-        <article className="skills-card col-12 col-md-6 col-lg-3">
+        <article className="skills-card col-12 col-md-12 col-lg-12">
           <div className="skills-card-header">
             <h3 className="skills-title">
               <span className="stack-icon stack-icon-backend" />
@@ -53,7 +53,7 @@ function Skills({ skills }) {
           </div>
         </article>
 
-        <article className="skills-card col-12 col-md-6 col-lg-3">
+        <article className="skills-card col-12 col-md-12 col-lg-12">
           <div className="skills-card-header">
             <h3 className="skills-title">
               <span className="stack-icon stack-icon-ai" />
@@ -73,7 +73,7 @@ function Skills({ skills }) {
           </div>
         </article>
 
-        <article className="skills-card col-12 col-md-6 col-lg-3">
+        <article className="skills-card col-12 col-md-12 col-lg-12">
           <div className="skills-card-header">
             <h3 className="skills-title">
               <span className="stack-icon stack-icon-tools" />
