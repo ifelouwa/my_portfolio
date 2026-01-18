@@ -115,27 +115,38 @@ button:focus-visible {
 }
 
 .nav-logo {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 999px;
-  background: conic-gradient(from 160deg, #38bdf8, #a855f7, #22c55e, #38bdf8);
+  border: 1px solid rgba(148, 163, 184, 0.7);
   padding: 2px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  background: conic-gradient(from 160deg, #38bdf8, #a855f7, #22c55e, #38bdf8);
+  cursor: pointer;
 }
 
 .nav-logo-inner {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  background: radial-gradient(circle at 30% 0%, #0f172a, #020617 70%);
+  background: radial-gradient(circle at 30% 0%, #020617, #020617 70%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #e5e7eb;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+}
+
+.nav-logo-mark {
+  display: inline-block;
+  padding-inline: 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 1));
+  letter-spacing: 0.12em;
 }
 
 .nav-title {
@@ -1075,6 +1086,10 @@ button:focus-visible {
   margin-top: 7px;
   font-size: 13px;
   color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
 }
 
 .contact-link {
@@ -1113,6 +1128,39 @@ button:focus-visible {
   padding: 3px 8px;
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95));
+  color: #e5e7eb;
+}
+
+.contact-icon-email::before {
+  content: '@';
+}
+
+.contact-icon-linkedin::before {
+  content: 'in';
+  text-transform: lowercase;
+}
+
+.contact-icon-github::before {
+  content: '{}';
+}
+
+.contact-icon-timezones::before {
+  content: 'WAT';
+  font-size: 11px;
 }
 
 .footer {

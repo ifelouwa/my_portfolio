@@ -54,7 +54,7 @@ function App() {
   }
 
   const handleDownloadCv = () => {
-  window.open('src/public/IFEOLUWA_CV.pdf', '_blank', 'noopener,noreferrer')
+    window.open('/IFEOLUWA_CV.pdf', '_blank', 'noopener,noreferrer')
   }
 
   return (

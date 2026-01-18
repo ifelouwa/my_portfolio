@@ -25,7 +25,10 @@ function Contact() {
         <div className="contact-grid col-12 col-lg-12">
           <div className="contact-card">
             <div className="contact-label">Email</div>
-            <div className="contact-value">ifeoluwaoworu@gmail.com</div>
+            <div className="contact-value">
+              <span className="contact-icon contact-icon-email" aria-hidden="true" />
+              <span className="sr-only">ifeoluwaoworu@gmail.com</span>
+            </div>
             <a className="contact-link" href="mailto:ifeoluwaoworu@gmail.com">
               <span className="contact-link-dot" />
               <span>Send a short intro</span>
@@ -33,7 +36,10 @@ function Contact() {
           </div>
           <div className="contact-card">
             <div className="contact-label">LinkedIn</div>
-            <div className="contact-value">ifeoluwa-oworu</div>
+            <div className="contact-value">
+              <span className="contact-icon contact-icon-linkedin" aria-hidden="true" />
+              <span className="sr-only">ifeoluwa-oworu on LinkedIn</span>
+            </div>
             <a
               className="contact-link"
               href="https://www.linkedin.com/in/ifeoluwa-oworu-933b7735a/"
@@ -46,7 +52,10 @@ function Contact() {
           </div>
           <div className="contact-card">
             <div className="contact-label">GitHub</div>
-            <div className="contact-value">@ifelouwa</div>
+            <div className="contact-value">
+              <span className="contact-icon contact-icon-github" aria-hidden="true" />
+              <span className="sr-only">@ifelouwa on GitHub</span>
+            </div>
             <a
               className="contact-link"
               href="https://github.com/ifelouwa"
@@ -58,8 +67,11 @@ function Contact() {
             </a>
           </div>
           <div className="contact-card">
-            <div className="contact-label">Time zones</div>
-            <div className="contact-value">Comfortable with WAT, GMT, CET and EAT time zones.</div>
+            <div className="contact-label">Time zone</div>
+            <div className="contact-value">
+              <span className="contact-icon contact-icon-timezones" aria-hidden="true" />
+              <span className="sr-only">Comfortable with WAT, GMT, CET and EAT time zones</span>
+            </div>
           </div>
         </div>
       </div>
@@ -74,4 +86,3 @@ function Contact() {
 }
 
 export default Contact
-

@@ -3,11 +3,16 @@ function NavBar({ onNavClick, onContact }) {
     <header className="nav">
       <div className="nav-inner d-flex align-items-center justify-content-between gap-6">
         <div className="nav-brand d-flex align-items-center gap-6">
-          <div className="nav-logo">
-            <div className="nav-logo-inner" onClick={() => onNavClick('about')}>
-              <img style={{ width: '70px', height: '40px', borderRadius: '5px' }} src="src/images/me.jpg" alt="A picture of Ifeoluwa" />
+          <button
+            type="button"
+            className="nav-logo"
+            onClick={() => onNavClick('about')}
+            aria-label="Go to about section"
+          >
+            <div className="nav-logo-inner">
+              <span className="nav-logo-mark">IO</span>
             </div>
-          </div>
+          </button>
           <div className="nav-title d-flex flex-column gap-6">
             <div className="nav-name">PRIMORDIAL</div>
             <div className="nav-role">Remote Full-Stack & AI Automation</div>
@@ -41,4 +46,3 @@ function NavBar({ onNavClick, onContact }) {
 }
 
 export default NavBar
-
