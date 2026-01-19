@@ -38,7 +38,7 @@ function NavBar({ onNavClick, onContact }) {
           onClick={onContact}
         >
           <span className="nav-cta-dot" />
-          <span>Open</span>
+          <span>Open to Work</span>
         </button>
       </div>
     </header>
